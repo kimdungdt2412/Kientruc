@@ -13,10 +13,12 @@ private:
 	bitset<128> binary;
 public:
 	QInt();
-	bitset<128> add(bitset<128> a, bitset<128> b);
-	bitset<128> subtract(bitset<128> a, bitset<128> b);
-	bitset<128> multiply(bitset<128> a, bitset<128> b);
-	bitset<128> divide(bitset<128> a, bitset<128> b);
+	QInt add(QInt a, QInt b);
+	QInt subtract(QInt a, QInt b);
+	QInt multiply(QInt a, QInt b);
+	QInt divide(QInt a, QInt b);
+	void in(bitset<128> a);
+	bitset<128> show();
 };
 
 #endif
